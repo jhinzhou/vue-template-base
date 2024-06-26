@@ -2,7 +2,7 @@
   <div>
     <nav>
       <RouterLink to="/">
-        Home+TEST+2+3+4
+        Home
       </RouterLink>
       <RouterLink to="/about">
         About
