@@ -17,6 +17,7 @@
     "prepare": "npx simple-git-hooks"
   },
   "dependencies": {
+    "@vueuse/core": "^10.11.0",
     "pinia": "^2.1.7",
     "vue": "^3.4.29",
     "vue-router": "^4.3.3"
@@ -29,7 +30,6 @@
     "@unocss/eslint-plugin": "^0.61.0",
     "@unocss/preset-rem-to-px": "^0.61.0",
     "@vitejs/plugin-vue": "^5.0.5",
-    "@vueuse/core": "^10.11.0",
     "eslint": "^8.57.0",
     "eslint-plugin-format": "^0.1.2",
     "eslint-plugin-vue": "^9.23.0",
