@@ -18,7 +18,7 @@ const isDark = useDark()
 const toggleDark = useToggle(isDark)
 
 const { locale } = useI18n()
-function changeLang() {
+const changeLang = () => {
   locale.value = locale.value === 'en' ? 'zh' : 'en'
 }
 </script>
