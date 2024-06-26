@@ -1,3 +1,5 @@
 export default {
-  'user.name': 'UserName',
+  user: {
+    name: 'UserName',
+  },
 }
