@@ -1,7 +1,8 @@
 <template>
-  <h1>hello template</h1>
+  <span>{{ $t('hello') }}</span>
 </template>
 
-<script setup></script>
+<script setup>
+</script>
 
 <style scoped></style>
