@@ -1,8 +1,8 @@
 {
-  "About": "About",
-  "Home": "Home",
+  "About": "about",
+  "Home": "Home page",
   "hello": "Hello",
   "user": {
-    "name": "UserName"
+    "name": "name"
   }
 }
