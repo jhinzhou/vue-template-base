@@ -1,10 +1,10 @@
 import { createI18n } from 'vue-i18n'
-import zhCN from './langs/zh-cn'
-import enUS from './langs/en-us'
+import zh from './langs/zh-cn.json'
+import en from './langs/en-us.json'
 
 const messages = {
-  zh: { ...zhCN },
-  en: { ...enUS },
+  zh,
+  en,
 }
 
 const lang = (navigator.language || navigator.browserLanguage).toLowerCase()

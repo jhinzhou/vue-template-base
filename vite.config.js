@@ -13,7 +13,7 @@ export default defineConfig({
     Vue(),
     UnoCSS(),
     AutoImport({
-      imports: ['vue', 'vue-router', 'pinia'],
+      imports: ['vue', 'vue-router', 'pinia', 'vue-i18n'],
       eslintrc: {
         enabled: false,
         filepath: './.eslintrc-auto-import.json',

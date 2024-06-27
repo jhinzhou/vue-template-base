@@ -9,7 +9,6 @@ export default antfu({
     'no-fallthrough': 'off',
     'vue/block-order': 'off',
     'prefer-promise-reject-errors': 'off',
-    'func-style': ['error', 'expression'],
   },
   stylistic: {
     overrides: {

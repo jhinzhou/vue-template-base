@@ -2,10 +2,10 @@
   <div>
     <nav>
       <RouterLink to="/">
-        Home
+        {{ $t('Home') }}
       </RouterLink>
       <RouterLink to="/about">
-        About
+        {{ $t('About') }}
       </RouterLink>
     </nav>
   </div>
