@@ -6,12 +6,20 @@ import Vue from '@vitejs/plugin-vue'
 import UnoCSS from 'unocss/vite'
 import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
+import legacyPlugin from '@vitejs/plugin-legacy'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: './',
   plugins: [
     Vue(),
-    UnoCSS(),
+    UnoCSS({
+      configFile: './uno.config.js',
+      // 打包完了双击html后unocss全部失效的关键配置
+      legacy: {
+        renderModernChunks: false,
+      },
+    }),
     AutoImport({
       imports: ['vue', 'vue-router', 'pinia', 'vue-i18n'],
       eslintrc: {
@@ -26,6 +34,29 @@ export default defineConfig({
       extensions: ['vue'],
       deep: true,
       resolvers: [],
+    }),
+    legacyPlugin({
+      targets: ['defaults', 'ie >= 11', 'chrome 52'],
+      additionalLegacyPolyfills: ['regenerator-runtime/runtime'],
+      renderLegacyChunks: true,
+      polyfills: [
+        'es.symbol',
+        'es.array.filter',
+        'es.promise',
+        'es.promise.finally',
+        'es/map',
+        'es/set',
+        'es.array.for-each',
+        'es.object.define-properties',
+        'es.object.define-property',
+        'es.object.get-own-property-descriptor',
+        'es.object.get-own-property-descriptors',
+        'es.object.keys',
+        'es.object.to-string',
+        'web.dom-collections.for-each',
+        'esnext.global-this',
+        'esnext.string.match-all',
+      ],
     }),
   ],
   server: {

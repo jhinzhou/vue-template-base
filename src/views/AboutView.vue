@@ -6,7 +6,12 @@
     <button @click="changeLang()">
       <i class="i-carbon:ibm-watson-language-translator text-20" />
     </button>
-    <span>{{ $t('user.name') }}</span>
+    <div class="f-c-c-c auto-bg">
+      <div>{{ $t('user.name') }}</div>
+      <div>{{ $t('user.name') }}</div>
+      <div>{{ $t('user.name') }}</div>
+      <div>{{ $t('user.name') }}</div>
+    </div>
   </div>
 </template>
 

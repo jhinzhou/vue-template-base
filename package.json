@@ -17,6 +17,7 @@
     "prepare": "npx simple-git-hooks"
   },
   "dependencies": {
+    "@vitejs/plugin-legacy": "^5.4.1",
     "@vueuse/core": "^10.11.0",
     "pinia": "^2.1.7",
     "vue": "^3.4.29",

@@ -1,6 +1,7 @@
 import '@/assets/styles/global.scss'
 import '@/assets/styles/reset.css'
 import 'uno.css'
+import 'virtual:uno.css'
 
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'

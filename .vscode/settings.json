@@ -26,5 +26,6 @@
     "markdown",
     "json",
     "jsonc"
-  ]
+  ],
+  "liveServer.settings.port": 5501
 }

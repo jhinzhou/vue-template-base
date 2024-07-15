@@ -1,4 +1,4 @@
-import { defineConfig, presetAttributify, presetIcons, presetUno } from 'unocss'
+import { defineConfig, presetAttributify, presetIcons, presetUno, transformerCompileClass, transformerDirectives, transformerVariantGroup } from 'unocss'
 import presetRemToPx from '@unocss/preset-rem-to-px'
 import { FileSystemIconLoader } from '@iconify/utils/lib/loader/node-loaders'
 
@@ -19,9 +19,11 @@ export default defineConfig({
     }),
     presetRemToPx({ baseFontSize: 4 }),
   ],
+  transformers: [transformerDirectives(), transformerVariantGroup(), transformerCompileClass()],
   shortcuts: [
     ['wh-full', 'w-full h-full'],
     ['f-c-c', 'flex justify-center items-center'],
+    ['f-c-c-c', 'flex justify-center items-center flex-col'],
     ['flex-col', 'flex flex-col'],
     ['card-border', 'border border-solid border-light_border dark:border-dark_border'],
     ['auto-bg', 'bg-white dark:bg-dark'],
