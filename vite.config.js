@@ -15,9 +15,9 @@ export default defineConfig({
     Vue(),
     UnoCSS({
       configFile: './uno.config.js',
-      // 打包完了双击html后unocss全部失效的关键配置
+      // 打包完了双击html后unocss全部失效的关键配置 true 可以使用live selver , false 可以加载文件
       legacy: {
-        renderModernChunks: false,
+        renderModernChunks: true,
       },
     }),
     AutoImport({
